@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sport Club Finder</title>
-  <link rel="icon" href="/src/public/favicon.png" sizes="512x512">
-  <link rel="stylesheet" href="/src/styles/style.css">
-</head>
-<body>
-  <header class="app-bar" aria-label="Sport Club Finder Header">
-    <div class="container">
-      <h1 class="brand-name">Sport Club Finder</h1>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport Club Finder</title>
+    <link rel="icon" href="/src/public/favicon.png" sizes="512x512" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+  </head>
+  <body>
+    <header class="app-bar" aria-label="Sport Club Finder Header">
+      <div class="container">
+        <h1 class="brand-name">Sport Club Finder</h1>
+      </div>
+    </header>
 
-  <main aria-label="Main Content">
-    <div class="container">
-      <section id="club" class="club" aria-labelledby="club-title">
-        <div class="title-section">
-          <h2 id="club-title">Sport Club List</h2>
-        </div>
-        <div id="searchBarContainer" class="search-bar-container">
-          <div class="floating-form">
-            <form id="searchForm" class="search-form" role="search" aria-label="Search for Sport Clubs">
-              <label for="name">Sport Club's Name</label>
-              <input id="name" name="name" type="search" placeholder="Search for a sport club..." required aria-describedby="searchDescription" />
-              <button type="submit">Search</button>
-            </form>
+    <main aria-label="Main Content">
+      <div class="container">
+        <section id="club" class="club" aria-labelledby="club-title">
+          <div class="title-section">
+            <h2 id="club-title">Sport Club List</h2>
           </div>
-        </div>
-        <div id="clubListContainer" class="club-list-container">
-          <div class="placeholder search-loading">Loading...</div>
-          <div id="clubList" class="club-list">
-            <div class="list"></div>
+          <div id="searchBarContainer" class="search-bar-container">
+            <div class="floating-form">
+              <form class="search-form">
+                <label for="searchInput">Sport Club's Name</label>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for a sport club..."
+                  />
+                </div>
+                <button type="button" id="searchButton">Search</button>
+              </form>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
-  </main>
+          <div id="clubListContainer" class="club-list-container">
+            <div class="search-loading">Loading...</div>
+            <div class="club-list">
+              <div class="list"></div>
+            </div>
+          </div>
 
-  <footer class="footer" aria-label="Footer">
-    <div class="container">
-      <p class="main-footer">Club Finder &copy; 2023</p>
-    </div>
-  </footer>
+          <div
+            id="clubDetailContainer"
+            class="club-detail-container"
+            style="display: none"
+          ></div>
+        </section>
+      </div>
+    </main>
 
-  <script type="module" src="/src/app.js"></script>
-</body>
+    <footer class="footer" aria-label="Footer">
+      <div class="container">
+        <p class="main-footer">Club Finder &copy; 2023</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/app.js"></script>
+  </body>
 </html>
