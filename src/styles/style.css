@@ -69,6 +69,9 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   margin: 16px 0;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .floating-form:hover {
@@ -78,35 +81,46 @@ main {
 
 .search-form {
   display: flex;
-  gap: 12px;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
 }
 
 .search-form .form-group {
   flex-grow: 1;
 }
 
+.search-form label {
+  font-size: 0.9rem;
+  margin-right: 8px;
+  color: #333;
+}
+
 .search-form input {
   width: 100%;
-  padding: 14px 16px;
+  padding: 12px 16px;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
+  background-color: #f8f9fa;
 }
 
 .search-form input:focus {
   border-color: cornflowerblue;
   outline: none;
+  box-shadow: 0 0 8px rgba(100, 149, 237, 0.3);
 }
 
 .search-form button {
-  padding: 14px 20px;
+  padding: 12px 20px;
   background-color: cornflowerblue;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 1rem;
 }
 
 .search-form button:hover {
@@ -117,7 +131,6 @@ main {
   background-color: #285bb5;
 }
 
-/*Search Bar Styles End*/
 
 .club-list-container {
   margin-block-start: 32px;

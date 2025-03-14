@@ -8,25 +8,23 @@
   <link rel="stylesheet" href="/src/styles/style.css">
 </head>
 <body>
-  <header>
-    <div class="app-bar">
+  <header class="app-bar" aria-label="Sport Club Finder Header">
+    <div class="container">
       <h1 class="brand-name">Sport Club Finder</h1>
     </div>
   </header>
 
-  <main>
+  <main aria-label="Main Content">
     <div class="container">
-      <section id="club" class="club">
+      <section id="club" class="club" aria-labelledby="club-title">
         <div class="title-section">
-          <h2>Sport Club List</h2>
+          <h2 id="club-title">Sport Club List</h2>
         </div>
         <div id="searchBarContainer" class="search-bar-container">
           <div class="floating-form">
-            <form id="searchForm" class="search-form" role="search" aria-label="Search Clubs">
-              <div class="form-group">
-                <label for="name">Sport Club's Name</label>
-                <input id="name" name="name" type="search" placeholder="Search for a sport club..." required />
-              </div>
+            <form id="searchForm" class="search-form" role="search" aria-label="Search for Sport Clubs">
+              <label for="name">Sport Club's Name</label>
+              <input id="name" name="name" type="search" placeholder="Search for a sport club..." required aria-describedby="searchDescription" />
               <button type="submit">Search</button>
             </form>
           </div>
@@ -41,9 +39,9 @@
     </div>
   </main>
 
-  <footer>
+  <footer class="footer" aria-label="Footer">
     <div class="container">
-      <div class="main-footer">Club Finder &copy; 2023</div>
+      <p class="main-footer">Club Finder &copy; 2023</p>
     </div>
   </footer>
 
