@@ -7,6 +7,7 @@
 
 body {
   font-family: sans-serif;
+  background-color: #f9f9f9;
 }
 
 /* GLOBAL */
@@ -38,12 +39,15 @@ section > .title-section {
   margin-block-end: 2rem;
   font-size: 1.2em;
 }
-/* GLOBAL */
 
-/* Start of Header */
+/* HEADER */
 header {
   background-color: cornflowerblue;
   color: beige;
+  padding: 24px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .app-bar {
@@ -53,15 +57,19 @@ header {
 .app-bar .brand-name {
   margin: 0;
   font-size: 1.7em;
+  color: white;
 }
-/* End of Header */
 
-/* Start of Main */
+/* MAIN */
 main {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-/* Search Bar Styles */
+/* SEARCH BAR STYLES */
 .floating-form {
   background-color: white;
   padding: 16px;
@@ -126,7 +134,7 @@ main {
   background-color: #285bb5;
 }
 
-
+/* CLUB LIST STYLES */
 .club-list-container {
   margin-block-start: 32px;
 }
@@ -179,12 +187,15 @@ main {
   font-weight: lighter;
   color: rgba(0, 0, 0, 0.5);
 }
-/* End of Main */
 
-/* Start of Footer */
+/* FOOTER */
 footer {
   background-color: cornflowerblue;
   color: beige;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .container {
@@ -194,39 +205,4 @@ footer .container {
 .main-footer {
   padding: 8px 16px;
   text-align: center;
-}
-/* End of Footer */
-
-.club-detail {
-  padding: 24px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  margin: 16px 0;
-  text-align: center;
-}
-
-.club-detail h2 {
-  margin-bottom: 16px;
-  font-size: 2em;
-}
-
-.detail-image {
-  max-width: 300px;
-  margin: 16px 0;
-}
-
-.back-button {
-  padding: 10px 20px;
-  margin-top: 20px;
-  background-color: cornflowerblue;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-  background-color: #3367d6;
 }
